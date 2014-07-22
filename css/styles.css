@@ -1,0 +1,21 @@
+body {
+	font-family: 'Alright Sans', sans-serif;
+	font-size: 93.75%;
+	line-height: 1.66667;
+	background-color: #f1f3f2;
+	color: #4c4e4d;
+	margin: 0;
+}
+
+.full-width-img {
+	width:100%;
+	/*position: absolute;*/
+	top: 0;
+	left: 0;
+}
+
+.container {
+	position: relative;
+	max-width: 60%;
+	margin: 0 auto;
+}

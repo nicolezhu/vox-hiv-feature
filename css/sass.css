@@ -1,0 +1,61 @@
+
+.fullbleed img {
+  max-width: 100%;
+  height: auto;
+}
+ 
+.chorus-snippet p toggles {
+  max-width: 100%;
+  border: 0;
+}
+ 
+.chorus-snippet p toggles a {
+  border: 0;
+  display: block;
+  float: left;
+  padding: 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+  width: 23% !important;
+  margin: 0.4em !important;
+}
+ 
+.chorus-snippet p toggles [data-name='leslie'] {
+  background-color: #e1d18e !important;
+  opacity: 0.5;
+  color: #4c4e4d;
+}
+ 
+.chorus-snippet p [data-name='leslie'].toggle-selected {
+  background: #e1d18e !important;
+  opacity: 1;
+}
+ 
+.chorus-snippet p toggles [data-name='danny'] {
+  background-color: #d1c095 !important;
+  opacity: 0.5;
+  color: #4c4e4d;
+}
+ 
+.chorus-snippet p [data-name='danny'].toggle-selected {
+  background-color: #d1c095 !important;
+  opacity: 1;
+}
+ 
+.chorus-snippet p toggles [data-name='jimmy'] {
+  background-color: #c4b296 !important;
+  opacity: 0.5;
+  color: #4c4e4d;
+}
+ 
+.chorus-snippet p [data-name='jimmy'].toggle-selected {
+  background-color: #c4b296 !important;
+  opacity: 1;
+}
+ 
+.chorus-snippet p toggles [data-name='tony'] {
+  background-color: #bbb1a8 !important;
+  opacity: 0.5;
+ 
+ 
