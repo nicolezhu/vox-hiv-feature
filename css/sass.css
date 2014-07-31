@@ -1,69 +1,10 @@
-// background and text colors
-$paige: #e1d18e;
-$vanderek: #d1c095;
-$leslie: #c4b296;
-$danny: #bbb1a8;
-$jimmy: #b9b2ac;
-$tony: #b2b2b4;
-$maliek: #b0bbbd;
-$tommy: #b8c6c7;
-$dark-gray: #4c4e4d;
-
-// mixins
-@mixin interview-highlight($name) {
-  background-color: $name !important;
-  color: $dark-gray !important;
-}
-
-@mixin toggle-colors($name) {
-  background-color: $name !important;
-  opacity: 0.5;
-  color: $dark-gray;
-  &:hover {
-      background-color: $name !important;
-      opacity: 0.8;
-      color: $dark-gray;
-    }
-}
-
-@mixin selected-toggle($name) {
-  background-color: $name !important;
-  opacity: 1;
-}
-
-.fullbleed img {
-  max-width: 100%;
-  height: auto;
-}
-
-// banner for personal details of each interviewee
-.banner {
-  width: 100%;
-  height: auto;
-  margin-bottom: 2em;
-  p {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    font-size: 0.9em;
-    span {
-      margin-left: 25px;
-      display: inline-block;
-    }
-  }
-}
-
-// interview text and names
-.feature-body p a {
-  background-color: none;
-  color: #4c4e4d !important;
-}
 
 .center h1 {
   font-family: Balto;
   font-size: 4em;
   margin: 0;
 }
-
+ 
 .name {
   font-family: Harriet,serif;
   font-size: 1.4em;
@@ -74,16 +15,16 @@ $dark-gray: #4c4e4d;
   margin-right: .2em;
   padding: 0 .3em;
 }
-
+ 
 .question .name {
   background-color: #e1e2e4 !important;
 }
-
+ 
 // quote teaser for next interview
 .feature-body hr {
   margin: 4em auto 4em auto;
 }
-
+ 
 .quote-banner {
   text-align: right;
   width: 87%;
@@ -92,9 +33,10 @@ $dark-gray: #4c4e4d;
   margin-bottom: 60px;
   a {
     padding: 0 1em 0 0;
+    color: $dark-gray !important;
   }
 }
-
+ 
 .quote-preview {
   text-transform: uppercase;
   font-size: 2em;
@@ -112,7 +54,7 @@ $dark-gray: #4c4e4d;
     height: 1.8em;
   }
 }
-
+ 
 // interview toggles
 .chorus-snippet p toggles {
   max-width: 100%;
@@ -127,114 +69,5 @@ $dark-gray: #4c4e4d;
     padding: 15px 0;
     width: 23% !important;
     margin: 0.4em !important;
-  }
-}
-
-// toggle and interview highlights for each person
-.chorus-snippet p toggles [data-name='leslie'] {
-  @include toggle-colors($leslie);
-  &.toggle-selected {
-    @include selected-toggle($leslie);
-  }
-}
-
-.chorus-snippet p toggles [data-name='danny'] {
-  @include toggle-colors($danny);
-  &.toggle-selected {
-    @include selected-toggle($danny);
-  }
-}
-
-.chorus-snippet p toggles [data-name='jimmy'] {
-  @include toggle-colors($jimmy);
-  &.toggle-selected {
-    @include selected-toggle($jimmy);
-  }
-}
-
-.chorus-snippet p toggles [data-name='tony'] {
-  @include toggle-colors($tony);
-  &.toggle-selected {
-    @include selected-toggle($tony);
-  }
-}
-
-.chorus-snippet p toggles [data-name='maliek'] {
-  @include toggle-colors($maliek);
-  &.toggle-selected {
-    @include selected-toggle($maliek);
-  }
-}
-
-.chorus-snippet p toggles [data-name='paige'] {
-  @include toggle-colors($paige);
-  &.toggle-selected {
-    @include selected-toggle($paige);
-  }
-}
-
-.chorus-snippet p toggles [data-name='vanderek'] {
-  @include toggle-colors($vanderek);
-  &.toggle-selected {
-    @include selected-toggle($vanderek);
-  }
-}
-
-.chorus-snippet p toggles [data-name='tommy'] {
-  @include toggle-colors($tommy);
-  &.toggle-selected {
-    @include selected-toggle($tommy);
-  }
-}
-
-.leslie {
-  @include interview-highlight($leslie);
-}
-
-.danny {
-  @include interview-highlight($danny);
-}
-
-.jimmy {
-  @include interview-highlight($jimmy);
-}
-
-.tony {
-  @include interview-highlight($tony);
-}
-
-.maliek {
-  @include interview-highlight($maliek);
-}
-
-.paige {
-  @include interview-highlight($paige);
-}
-
-.vanderek {
-  @include interview-highlight($vanderek);
-}
-
-.tommy {
-  @include interview-highlight($tommy);
-}
-
-// media queries
-@media only screen and (max-width: 959px) {
-  .chorus-snippet p toggles a {
-    margin: 0.3em !important;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .chorus-snippet p toggles a {
-    margin: 0.2em !important;
-  }
-  .center h1 {
-    line-height: 1;
-    padding-bottom: .2em;
-  }
-  toggles a {
-    font-size: 90%;
-  }
-}
+ 
+ 
