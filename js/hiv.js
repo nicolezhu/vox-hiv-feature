@@ -12,6 +12,10 @@ console.log( 'clicked' );
   $('html,body').animate({scrollTop: $('.top-nav').offset().top}, 800);
 }
 
+function backToTop() {
+  $('html,body').animate({scrollTop: $('body').offset().top}, 800);
+}
+
 function navButtons() {
   $('.chorus-snippet toggles a').parent().addClass('top-nav');
   $('.chorus-snippet .top-nav toggles a').on('click', function(){
@@ -39,7 +43,7 @@ function nextPerson() {
     name = to_capitalize.charAt(0).toUpperCase() + to_capitalize.slice(1);
   }
   $('.quote-banner').removeClass(current);
-  $('.quote-banner a').html("Read " + name + "'s story");
+  $('.quote-banner a').html("Read " + name + "'s story <span id='arrow'>&#9654;</span>");
 }
 
 function nextBanner() {
