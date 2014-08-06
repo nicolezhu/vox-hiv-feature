@@ -41,6 +41,17 @@ $dark-gray: #4c4e4d;
   color: #6d98a8 !important;
 }
 
+// byline color
+.feature-head__text h3 {
+  a {
+    color: #e1d18e;
+  }
+}
+
+.m-entry-admin-button a:before {
+  color: #e1d18e;
+}
+
 #interviews-intro {
   font-size: 2em;
   line-height: 30px;
@@ -89,7 +100,7 @@ $dark-gray: #4c4e4d;
 }
 
 .interviews {
-  background-color: #ab4a3e;
+  background-color: #939598;
   cursor: pointer;
   color: #fff;
   text-transform: uppercase;
@@ -290,9 +301,11 @@ $dark-gray: #4c4e4d;
   .chorus-snippet p toggles a {
     margin: 0.3em !important;
   }
-  
   .quote-preview {
     font-size: 1.3em;
+  }
+  .credits {
+    line-height: 1.3em;
   }
 }
 
@@ -311,6 +324,9 @@ $dark-gray: #4c4e4d;
   .quote-preview {
     font-size: 1.3em;
     padding: 0px 20px 0px 30px;
+  }
+  .credits {
+    margin-bottom: 0;
   }
 }
 
