@@ -46,6 +46,32 @@ $dark-gray: #4c4e4d;
   line-height: 30px;
 }
 
+// hack for <hr />
+.hr {
+  display: block;
+  border: 0 solid #e0dedf;
+  border-bottom-width: 1px;
+  margin: 4.33em auto 5em auto;
+  max-width: 20em;
+  position: relative;
+}
+
+.hr-box {
+  font-size: .8em;
+  content: '';
+  display: block;
+  width: 1.3em;
+  height: 1.3em;
+  background-color: #afc4ce;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin: -.5em;
+  -webkit-box-shadow: 0 0 0 .5em #f1f3f2;
+  -moz-box-shadow: 0 0 0 .5em #f1f3f2;
+  box-shadow: 0 0 0 .5em #f1f3f2;
+}
+
 // banner for personal details of each interviewee
 .banner {
   width: 100%;
@@ -248,6 +274,15 @@ $dark-gray: #4c4e4d;
 
 .tommy {
   @include interview-highlight($tommy);
+}
+
+// credits
+.credits {
+  max-width: 50em;
+  width: 66.66667%;
+  margin: 0 auto;
+  line-height: 0.5;
+  margin-bottom: -5em;
 }
 
 // media queries
