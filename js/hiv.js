@@ -12,6 +12,10 @@ console.log( 'clicked' );
   $('html,body').animate({scrollTop: $('.top-nav').offset().top}, 800);
 }
 
+function scrollToInterviews() {
+  $('html,body').animate({scrollTop: $('#interviews-intro').offset().top}, 800);
+}
+
 function backToTop() {
   $('html,body').animate({scrollTop: $('body').offset().top}, 800);
 }
