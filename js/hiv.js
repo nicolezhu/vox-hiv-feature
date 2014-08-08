@@ -45,6 +45,9 @@ function nextPerson() {
   } else {
     to_capitalize = $('.bottom-nav').find('.toggle-selected').next().data().name;
     name = to_capitalize.charAt(0).toUpperCase() + to_capitalize.slice(1);
+    if (name == 'Vanderek') {
+      name = 'VanDerek';
+    }
   }
   $('.quote-banner').removeClass(current);
   $('.quote-banner a').html("Read " + name + "'s story <span id='arrow'>&#9654;</span>");
