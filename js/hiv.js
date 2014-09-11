@@ -14,6 +14,7 @@ console.log( 'clicked' );
 
 function scrollToInterviews() {
   $('html,body').animate({scrollTop: $('#interviews-intro').offset().top}, 800);
+  _gaq.push(['_trackEvent', 'Interviews', 'read the interviews', 'read the interviews']);
 }
 
 function backToTop() {
